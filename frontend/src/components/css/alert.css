@@ -1,0 +1,33 @@
+.alert-container{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.alert{
+    margin: 0 1rem;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 217, 217);
+    border: 5px solid red;
+    border-radius: 1rem;
+    /* transform: translate(-50%,0); */
+}
+
+.alert i{
+    color: red;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.alert-msg{
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,84 @@
+.item{
+    height: 16rem;
+    width: 16rem;
+    background-color: #ffbb5c;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.title, .description{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.tags{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.tag{
+    background-color: rgb(0, 0, 0, 0.1);
+    padding: 3px 10px;
+    margin-right: 0.6rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+}
+
+.date{
+    font-size: 0.9rem;
+}
+
+.item-docker{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options{
+    width:40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.option{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #24242a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease-out 0.1s;
+}
+
+.option:hover{
+    scale: 1.1;
+}
+
+@media (max-width: 1440px){
+    .item{
+        height: 14rem;
+        width: 14rem;
+    }
+    .title, .description{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 705px){
+    .item{
+        width: 100%;
+    }
+}

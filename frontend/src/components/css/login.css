@@ -1,0 +1,159 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(182, 182, 255); */
+    background: url(../../../public/images/mesh-273.png) no-repeat center center/cover;
+}
+
+.signup{
+    margin-top: 3rem;
+}
+
+.login-inner{
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* background-color: #f0eff1; */
+    border-radius: 1rem;
+}
+
+img{
+    height: 25rem;
+}
+
+form{
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* color: #feffb9", "rgb(255, 255, 111)", "#ffbb5c", "rgb(255, 153, 63)", "#a1ec75", "#79fffd, rgb(117, 204, 255)", #ffb7e4", rgb(194, 166, 255); */
+}
+
+form h4{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input-box input{
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    background: transparent;
+    border: none;
+    border-radius: 3rem;
+    z-index: 1;
+    /* border: 2px solid #24242a; */
+}
+
+.hide-show{
+    width: 15%;
+    cursor: pointer;
+}
+
+.hide-show i{
+    font-size: 1.2rem;
+}
+
+.input-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 1.3rem 0;
+    width: 20rem;
+    border-radius: 3rem;
+    border: 2px solid #24242a;
+}
+
+.input-box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: 0.2s all ease;
+}
+
+.input-box input:focus ~ span,
+.input-box input:valid ~ span{
+    font-size: 0.8rem;
+    transform: translate(-0.6rem, -2.2rem);
+}
+
+.input-box input:focus{
+    outline: none;
+}
+
+.submit-button{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    background-color: rgb(71, 101, 255);
+    border: none;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.submit-button:hover{
+    background-color: rgb(65, 60, 162);
+}
+
+form p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+form p a{
+    color: rgb(97, 97, 255);
+}
+
+@media(max-width: 900px){
+    .login-image{
+        display: none;
+    }
+}
+
+@media(max-width: 481px){
+    .login-inner{
+        width: 90%;
+    }
+    form{
+        width: 90%;
+        padding: 0;
+        margin: 2rem;
+    }
+    form h4{
+        font-size: 1.5rem;
+    }
+    .input-box{
+        width: 100%;
+    }
+    .input-box input{
+        font-size: 1rem;
+        
+    }
+    .input-box span{
+        padding: 0.3rem 1rem;
+    }
+}
+
+@media(max-width: 330px){
+    form{
+        margin: 1rem;
+    }
+    form h4{
+        font-size: 1.2rem;
+    }
+    form p{
+        font-size: 1rem;
+    }
+}
